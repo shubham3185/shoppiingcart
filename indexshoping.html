@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        section{
+            background-color: rgb(248, 208, 99);
+        }
+        nav{
+            background-color: rgb(88, 219, 154);
+            width: 100%;
+        }
+        nav .col-sm-3{
+            text-align: center;
+        }
+        nav h3 i{
+            color: blue;
+            font-size: 25px;
+        }
+        
+       nav .ul{
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+       }
+         nav .ul a{
+            text-decoration: none;
+            margin: 20px;
+            color: black;
+        }
+        nav .row .col-lg-4{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aliceblue; */
+            /* column-gap: 10px; */
+        }
+        nav .row .col-lg-4 .p i{
+            margin: 0px 35px 0px -5px;
+        }
+        .btn1{
+            background-color: white;
+            border-radius: 20px;
+            width: 120px;
+            padding: 4px;
+        }
+
+
+        /* /* .container-fluid{
+            height: 500px;
+            background-color: aliceblue;
+        }
+        .container-fluid .col-sm-4{
+            height: 500px;
+        } */
+        .cfd1 img{
+            margin: 50px 0px 0px 70px;
+        }
+        .phb{
+            margin: 120px 0px 0px 80px;
+        }
+
+        .cfd1{
+          background-color: aliceblue;
+        }
+        .cfd1 .box{
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+          flex-basis: 40%;
+        }
+        .cfd1 .box .box1{
+              width: 40%;
+              background-color: blue;
+        }
+        .cfd1 .box .box2{
+          width: 60%;
+        }
+        .cfd1 .btn2{
+            background-color: blue;
+            width: 150px;
+            color: white;
+            border-radius: 21px;
+            padding: 5px;
+            border: none;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        @media screen and (min-width:300px) and (max-width:500px) 
+        {
+          .cfd1 img{
+            /* margin: 0px 50px 0px 100px; */
+            margin: 10px auto;
+            width: 100%;
+            float: left;
+            overflow: hidden;
+
+          }
+          .phb{
+            margin: 10px 10px auto;
+            padding: 10px;
+          }
+          .cfd3 .row .pt5{
+            flex-direction: column-reverse;
+           
+            
+          }
+
+          footer{
+            /* height: 1000px; */
+            /* overflow: hidden; */
+            /* background-color: blue; */
+          }
+          
+        }
+        .cfd3{
+            /* height: 500px; */
+        }
+        .cfd3{
+            background-color: rgb(75, 215, 233);
+            /* text-align: center; */
+            height: 480px;
+        }
+
+        .cfd3 .btn3{
+            width: 130px;
+            padding: 5px;
+            color:white;
+            border-radius: 40px;
+            border: none;
+        }
+        .cfd3 .row .pt5{
+            margin: 130px 0px 0px 0px;
+        }
+        .container1 h1{
+          margin:0px 0px 0px 50px;
+        }
+        .container2 h1{
+            margin:0px 0px 0px 50px;
+        }
+        .p{
+            margin:30px 0px 0px 50px;
+        }
+
+        .container3 h1{
+          margin:-10px 0px 0px 0px 
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <nav class="navb fixed">
+            <div class="row">
+                <div class="col-sm-3 mt-2">
+                    <h3><i class="fa-solid fa-cart-shopping"></i>Skycart</h3>
+                </div>
+                <div class="col-lg-5">
+                    <div class="ul m-2">
+                        <a href="">Home</a>
+                        <a href="">Shop</a>
+                        <a href="">Blog</a>
+                        <a href="">Pages</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="p m-2"><a href=""><i class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-cart-plus"></i></a></p>
+                    <button class="btn1">Buy Now</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid cfd1 w-100">
+            <div class="row">
+                <div class="col-sm-4 bg-primary">
+                    <img src="https://thumbs.dreamstime.com/z/led-light-bulbs-shopping-trolley-blue-background-buying-energy-saving-176827051.jpg?w=992" alt="" width="100%" height="450px">
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="phb">
+                        <h6>Shop is fun</h6>
+                        <h2>BROWSE OUR <br> PREMIUM PRODUCT</h2>
+                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Culpa unde voluptate et pariatur repellat, illo nisi numquam atque <br> cupiditate voluptates at, earum tempora quo cum reprehenderit officia.</P>
+                        <button class="btn2">Browse Now</button>
+                    </div>
+                </div>
+            </div>
+        </div><br>
+
+        <div class="container-fluid cfd2 w-100">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="sooz.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="medium_photo.jpeg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="CTSLMWNW_AV1.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="fas.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fash.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fashi.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="hea.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp1.jpg" class="d-block w-100" alt="..." height="220px">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div> <br><br><br>
+        
+        <div class="container1 w-100">
+            <p class="p">Popular item in the market</p>
+            <h1>Trending <span style="border-bottom: 2px solid white;">Product</span></h1>
+
+            <div class="row text-center p-5">
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="fas.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fashi.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fash.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="fashi.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="sooz.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Campus Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="CTSLMWNW_AV1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Nike Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="medium_photo.jpeg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Adidas Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="hea.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row text-center p-5">
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="fas.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fashi.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fash.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="sooz.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="sooz.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Campus Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="CTSLMWNW_AV1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Nike Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="medium_photo.jpeg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Adidas Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="hea.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid cfd3 w-100">
+            <div class="row text-center">
+                <div class="col-lg-5 pt5">
+                    <h1>Up To 50% Off</h1>
+                    <h5>Winter Sale</h5>
+                    <p>lorem ipsum it this is offer</p>
+                    <button class="btn3 bg-primary">Buy Now</button>
+                </div>
+                <div class="col-lg-7"><img src="win.jpg" alt="" class="w-100" height="auto"></div>
+            </div>
+        </div>
+
+
+        <div class="container2 p-2">
+          <p class="p">Popular item in the market</p>
+            <h1>Best <span style="border-bottom: 2px solid white;"> Sellers</span></h1>
+
+            <div class="row text-center p-5">
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="fas.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fashi.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="fash.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Beauty</p>
+                            <h5>Women Facewash</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="fashi.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="sooz.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Campus Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="CTSLMWNW_AV1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Nike Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="medium_photo.jpeg" class="d-block w-100" alt="..." height="200px">
+                            <p>Shoes</p>
+                            <h5>Adidas Shoes</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-3">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="hea.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="headp1.jpg" class="d-block w-100" alt="..." height="200px">
+                            <p>Accessories</p>
+                            <h5>Sony headphone</h5>
+                            <p>$50.00</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+      <div class="container3 w-100 p-5">
+        <p class="P">Popular item in the Market</p>
+        <h1>Latest News</h1>
+
+        <div class="row">
+          <div class="col-lg-4">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="sooz.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="medium_photo.jpeg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="CTSLMWNW_AV1.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-4">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="fas.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="fash.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="fashi.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-4">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="hea.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="headp.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="headp1.jpg" class="d-block w-100" alt="..." height="220px">
+                      <span>By admin</span>
+                      <h2>Lorem sit amet consectetur adipisicing elit.</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod  lorem dir sgfo</p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+      <center>
+      <div class="container w-100" style="background-color: white; text-align: center; height: 400px; padding: 100px 0px 0px 0px; position: relative; top: 80px; border-radius: 10px;">
+        <h1>Get Update From Anywhere</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p><br>
+        <input type="email"> <input type="submit" class="btn bg-primary text-white">
+      </div>
+    </center>
+
+      <footer class="bd-footer" style="background-color: rgb(7, 7, 145); color: white; width: 100%; height: 100%;">
+        <div class="container w-100 py-5" style="position: relative; top: 70px;">
+          <div class="row">
+            <div class="col-sm-3 mb-3">
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rerum molestiae ipsa inventore perspiciatis iusto possimus numquam error animi neque laborum, exercitationem placeat quo, cum blanditiis. Quae ut laboriosam natus?</p>
+          </div>
+          <div class="col-sm-3 mb-3">
+            <h3>Gallery</h3>
+            <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px 2px;">
+            <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="120px" height="110px" style="padding: 2px;">
+          </div>
+          <div class="col-6 col-sm-2 offset-lg-1 mb-3">
+            <h3>Quick Links</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="" class="text-white ">Home</a></li>
+              <li class="mb-2"><a href="" class="text-white ">Shop</a></li>
+              <li class="mb-2"><a href="" class="text-white ">Blog</a></li>
+              <li class="mb-2"><a href="" class="text-white ">Product</a></li>
+              <li class="mb-2"><a href="" class="text-white ">Brand</a></li>
+              <li class="mb-2"><a href="" class="text-white ">Contract</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-2 offset-lg-1 mb-3">
+            <h3>Contact Us</h3>
+            <ul class="list-unstyled">
+              <li class="">
+                <h6>Head Office</h6>
+                <p>123, Man Street, Your City</p><br>
+              </li>
+              <li class="">
+                <h6>Phone Number</h6>
+                <p>+123 646 6388</p>
+                <p>+123 657 6354</p><br>
+              </li>
+              <li class="">
+                <h6>Email</h6>
+                <p>sky@infosxample.com</p>
+                <p>www.infoexample.com</p>
+              </li>
+            </ul>
+          </div>
+          </div>
+
+          <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">            
+            <li class="nav-item dropdown lion">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Mission
+              </a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item bg-primary text-white" href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quos dicta quasi deleniti error tempore, consectetur <br> voluptatibus consequatur, cupiditate, voluptas <br> harum nostrum eum quidem consequuntur <br> accusamus sequi! Quas cupiditate <br> nihil vero.</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown lion">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quick Links
+              </a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item bg-primary text-white" href="#">
+                  <p>Home</p><p>Shop</p><p>Blog</p><p>Product</p><p>Brand</p><p>Contract</p>
+                </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown lion">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item bg-primary text-white" href="#">
+                  <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px 2px;">
+                  <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+                  <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+                </a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown lion">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Contact Us
+              </a>
+              <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item bg-primary text-white" href="#">
+                  <h6>Head Office</h6>
+                  <p>123, Man Street, Your City</p><br>
+
+                  <h6>Phone Number</h6>
+                  <p>+123 646 6388</p>
+                  <p>+123 657 6354</p><br>
+            
+                  <h6>Email</h6>
+                  <p>sky@infosxample.com</p>
+                  <p>www.infoexample.com</p>
+                </a></li>
+              </ul>
+            </li>
+          </ul> -->
+          <!-- <div class="col-sm-3">
+            <h2>Our Mission</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque rerum molestiae ipsa inventore perspiciatis iusto possimus numquam error animi neque laborum, exercitationem placeat quo, cum blanditiis. Quae ut laboriosam natus?</p>
+          </div>
+          <div class="col-sm-2">
+            <h3>Quick Links</h3>
+            <p>Home</p>
+            <p>Shop</p>
+            <p>Blog</p>
+            <p>Product</p>
+            <p>Brand</p>
+            <p>Contract</p>
+          </div>
+          <div class="col-sm-4">
+            <h3>Gallery</h3>
+            <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px 2px;">
+            <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+            <img src="sooz.jpg" alt="" width="150px" height="110px" style="padding: 2px;">
+          </div>
+          <div class="col-sm-3">
+            <h3>Contact Us</h3>
+            <h6>Head Office</h6>
+            <p>123, Man Street, Your City</p><br>
+
+            <h6>Phone Number</h6>
+            <p>+123 646 6388</p>
+            <p>+123 657 6354</p><br>
+            
+            <h6>Email</h6>
+            <p>sky@infosxample.com</p>
+            <p>www.infoexample.com</p>
+          </div> -->
+        </div>
+        <div class="copy bg-primary w-100 text-center" style=" padding: 20px;">
+            <p>Copyright @2023 All rights reserved|This template is made by SKY</p>
+        </div>
+      </footer>
+
+    </section>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ 
+ <!-- <div class="container-fluidsss">
+   <div class="box">
+     <div class="box1">
+       <img src="https://thumbs.dreamstime.com/z/led-light-bulbs-shopping-trolley-blue-background-buying-energy-saving-176827051.jpg?w=992" alt="" width="100%" height="450px">
+     </div>
+     <div class="box2">
+       <div class="phb">
+         <h6>Shop is fun</h6>
+         <h2>BROWSE OUR <br> PREMIUM PRODUCT</h2>
+         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Culpa unde voluptate et pariatur repellat, illo nisi numquam atque <br> cupiditate voluptates at, earum tempora quo cum reprehenderit officia.</P>
+         <button class="btn2">Browse Now</button>
+       </div>
+     </div>
+   </div>
+ </div> -->
+</body>
+</html>
